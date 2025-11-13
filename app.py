@@ -3,9 +3,10 @@ import pickle
 import pandas as pd
 
 # --- Load the trained model and its columns
-with open('salary_model.pkl', 'rb') as f:
+ with open('/mount/src/salary_prediction_app/salary_model.pkl', 'rb') as f:
     model = pickle.load(f)
-with open('model_columns.pkl', 'rb') as f:
+
+with open('/mount/src/salary_prediction_app/model_columns.pkl', 'rb') as f:
     model_columns = pickle.load(f)
 
 st.markdown("<h1 style='color:#4CAF50;text-align:center;'>💼 Salary Prediction App</h1>", unsafe_allow_html=True)
@@ -44,4 +45,5 @@ if st.button("Predict Salary"):
 
 # --- Extra footer for a professional look
 st.markdown("---")
+
 st.markdown("<p style='font-size:16px;text-align:center;'>Made with ❤ using Streamlit</p>", unsafe_allow_html=True)
