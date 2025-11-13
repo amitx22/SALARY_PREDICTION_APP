@@ -1,9 +1,9 @@
-import streamlit as st
+ import streamlit as st
 import pickle
 import pandas as pd
 
 # --- Load the trained model and its columns
- with open('/mount/src/salary_prediction_app/salary_model.pkl', 'rb') as f:
+with open('/mount/src/salary_prediction_app/salary_model.pkl', 'rb') as f:
     model = pickle.load(f)
 
 with open('/mount/src/salary_prediction_app/model_columns.pkl', 'rb') as f:
