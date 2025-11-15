@@ -18,10 +18,19 @@ jobtitle_list = sorted(data['Job_Title'].dropna().unique())
 gender_list = sorted(data['Gender'].dropna().unique())
 
 # --- Load model and columns (make sure the files exist and are trained with the right columns!)
-with open('salary_model.pkl', 'rb') as f:
+import pickle
+import os
+
+# Safely load salary_model.pkl
+model_path = os.path.join(os.path.dirname(__file__), 'salary_model.pkl')
+columns_path = os.path.join(os.path.dirname(__file__), 'model_columns.pkl')
+
+with open(model_path, 'rb') as f:
     model = pickle.load(f)
-with open('model_columns.pkl', 'rb') as f:
+
+with open(columns_path, 'rb') as f:
     model_columns = pickle.load(f)
+
 
 st.title("💼 Salary Prediction App")
 st.write("Enter your information and get an estimated salary below! 🚀")
@@ -80,3 +89,4 @@ if upload is not None:
 
 st.markdown("---")
 st.markdown("<p style='font-size:16px;text-align:center;'>Made with ❤ using Streamlit</p>", unsafe_allow_html=True)
+
