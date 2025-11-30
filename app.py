@@ -79,7 +79,7 @@ if upload is not None:
 
 st.markdown("---")
 st.markdown("<p style='font-size:16px;text-align:center;'>Made with ❤ using Streamlit</p>", unsafe_allow_html=True)
+ 
 
-ye pura app.py ka code hai isko correct krkke do
 
 
