@@ -1,4 +1,4 @@
- import streamlit as st
+import streamlit as st
 import pickle
 import pandas as pd
 import numpy as np
@@ -81,3 +81,4 @@ st.markdown("---")
 st.markdown("<p style='font-size:16px;text-align:center;'>Made with ❤ using Streamlit</p>", unsafe_allow_html=True)
 
 ye pura app.py ka code hai isko correct krkke do
+
