@@ -18,7 +18,7 @@ jobtitle_list = sorted(data['Job_Title'].dropna().unique())
 gender_list = sorted(data['Gender'].dropna().unique())
 
 # --- Load model and columns (make sure the files exist and are trained with the right columns!)
- with open('salary_model.pkl', 'rb') as f:
+with open('salary_model.pkl', 'rb') as f:
     model = pickle.load(f)
 with open('model_columns.pkl', 'rb') as f:
     model_columns = pickle.load(f)
@@ -81,4 +81,5 @@ st.markdown("---")
 st.markdown("<p style='font-size:16px;text-align:center;'>Made with ❤ using Streamlit</p>", unsafe_allow_html=True)
 
 ye pura app.py ka code hai isko correct krkke do
+
 
