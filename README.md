@@ -9,7 +9,7 @@ This project is built using **Python, Machine Learning, Flask, Pandas, NumPy, an
 
 - 📊 Predict salary using ML model
 - 🧠 Trained Machine Learning algorithm
-- 🌐 User-friendly web interface using Flask
+- 🌐 User-friendly web interface using Streamlit
 - 📁 CSV dataset support
 - 💾 Saved trained model using Pickle
 - ⚡ Fast prediction results
@@ -19,7 +19,7 @@ This project is built using **Python, Machine Learning, Flask, Pandas, NumPy, an
 ## 🛠️ Technologies Used
 
 - Python
-- Flask
+- Streamlit
 - Pandas
 - NumPy
 - Scikit-learn
